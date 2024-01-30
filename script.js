@@ -13,5 +13,14 @@ cardBody.addEventListener("click", function (e) {
     clickedQuestion
       .querySelector(".card__question__ans")
       .classList.toggle("closed");
+
+    const img = clickedQuestion.querySelector("img");
+    img.src = clickedQuestion
+      .querySelector(".card__question__ans")
+      .classList.contains("closed")
+      ? "public/images/icon-plus.svg"
+      : "public/images/icon-minus.svg";
+
+    console.log(img);
   }
 });

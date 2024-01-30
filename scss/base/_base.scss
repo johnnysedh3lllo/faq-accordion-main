@@ -10,25 +10,32 @@ body {
 .card {
   background-color: $clr-white;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 2rem;
 
-  &__title{
+  &__title {
     font-size: 3rem;
   }
 
+  &__question {
+    cursor: pointer;
+  }
   &__question:hover &__question__title {
-    
+    color: $clr-purple-lighter;
   }
 
   &__question__ans {
-    transition: opacity 0.35s;
-    // opacity: 1;
-    // block-size: 0;
+    // padding-block-start: 1rem;
+    max-block-size: 20rem;
+    overflow: hidden;
+    transition: max-block-size .5s;
   }
 }
 .closed {
-  display: none;
-  //   opacity: 0;
+  padding-block-start: 0;
+  max-block-size: 0;
+}
+.card__question.display{
+    display: inline;
 }
 
 @media (min-width: 375px) {
