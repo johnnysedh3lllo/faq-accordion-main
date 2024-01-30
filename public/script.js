@@ -1,5 +1,4 @@
 // "use strict";
-
 const card = document.querySelector(".card");
 const cardBody = document.querySelector(".card__body");
 const cardQuestions = document.querySelectorAll(".card__question");
