@@ -69,7 +69,7 @@ a {
 }
 
 body {
-  background: url("../../public/images/background-pattern-mobile.svg") no-repeat hsl(275, 100%, 97%);
+  background: url("../public/images/background-pattern-mobile.svg") no-repeat hsl(275, 100%, 97%);
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -107,7 +107,7 @@ body {
 
 @media (min-width: 375px) {
   body {
-    background: url("../../public/images/background-pattern-desktop.svg") no-repeat hsl(275, 100%, 97%);
+    background: url("../public/images/background-pattern-desktop.svg") no-repeat hsl(275, 100%, 97%);
   }
 }
 body {

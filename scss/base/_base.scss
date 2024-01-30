@@ -1,5 +1,5 @@
 body {
-  background: url("../../public/images/background-pattern-mobile.svg") no-repeat
+  background: url("../public/images/background-pattern-mobile.svg") no-repeat
     $clr-light-pink;
   padding: 1.5rem;
   display: $display-flex;
@@ -40,7 +40,7 @@ body {
 
 @media (min-width: 375px) {
   body {
-    background: url("../../public/images/background-pattern-desktop.svg")
+    background: url("../public/images/background-pattern-desktop.svg")
       no-repeat $clr-light-pink;
   }
 }
