@@ -2,7 +2,6 @@
 
 const card = document.querySelector(".card");
 const cardBody = document.querySelector(".card__body");
-const cardAnswers = document.querySelectorAll(".card__question__ans");
 const cardQuestions = document.querySelectorAll(".card__question");
 
 cardBody.addEventListener("click", function (e) {
