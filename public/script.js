@@ -3,6 +3,12 @@ const card = document.querySelector(".card");
 const cardBody = document.querySelector(".card__body");
 const cardQuestions = document.querySelectorAll(".card__question");
 
+const closeQuestion = function (question) {
+  question.querySelector(".card__question__ans").classList.remove("open");
+  question.querySelector(".card__question__ans").classList.add("closed");
+  question.querySelector("img").src = "images/icon-plus.svg";
+};
+
 cardBody.addEventListener("click", function (e) {
   const clickedQuestion = e.target.closest(".card__question");
 
@@ -13,12 +19,7 @@ cardBody.addEventListener("click", function (e) {
 
   cardQuestions.forEach((question) => {
     if (question !== clickedQuestion) {
-      const otherQuestion = question.querySelector(".card__question__ans");
-      const otherQuestionImg = question.querySelector("img");
-
-      otherQuestion.classList.remove("open");
-      otherQuestion.classList.add("closed");
-      otherQuestionImg.src = "images/icon-plus.svg";
+      closeQuestion(question);
     }
   });
 
@@ -30,5 +31,13 @@ cardBody.addEventListener("click", function (e) {
     answer.classList.toggle("open");
     answer.classList.toggle("closed");
     img.src = "images/icon-plus.svg";
+  }
+});
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("body")) {
+    cardQuestions.forEach((question) => {
+      closeQuestion(question);
+    });
   }
 });
