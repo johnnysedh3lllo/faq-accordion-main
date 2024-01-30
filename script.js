@@ -16,8 +16,8 @@ cardBody.addEventListener("click", function (e) {
     img.src = clickedQuestion
       .querySelector(".card__question__ans")
       .classList.contains("closed")
-      ? "public/images/icon-plus.svg"
-      : "public/images/icon-minus.svg";
+      ? "images/icon-plus.svg"
+      : "images/icon-minus.svg";
 
     console.log(img);
   }
