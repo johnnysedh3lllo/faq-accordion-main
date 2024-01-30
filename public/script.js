@@ -28,7 +28,7 @@ cardBody.addEventListener("click", function (e) {
     img.src = "images/icon-minus.svg";
   } else {
     answer.classList.toggle("open");
-    answer.classList.add("closed");
+    answer.classList.toggle("closed");
     img.src = "images/icon-plus.svg";
   }
 });
