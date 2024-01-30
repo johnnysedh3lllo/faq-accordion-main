@@ -1,0 +1,39 @@
+body {
+  background: url("../../public/images/background-pattern-mobile.svg") no-repeat
+    $clr-light-pink;
+  padding: 1.5rem;
+  display: $display-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: $clr-white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+
+  &__title{
+    font-size: 3rem;
+  }
+
+  &__question:hover &__question__title {
+    
+  }
+
+  &__question__ans {
+    transition: opacity 0.35s;
+    // opacity: 1;
+    // block-size: 0;
+  }
+}
+.closed {
+  display: none;
+  //   opacity: 0;
+}
+
+@media (min-width: 375px) {
+  body {
+    background: url("../../public/images/background-pattern-desktop.svg")
+      no-repeat $clr-light-pink;
+  }
+}

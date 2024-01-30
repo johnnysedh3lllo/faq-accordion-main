@@ -1,0 +1,18 @@
+body {
+  font-family: $ff-primary;
+}
+
+.card {
+  &_title {
+    font-weight: $fw-700;
+  }
+
+  &__title,
+  &__question__title {
+    color: $clr-purple-dark;
+  }
+
+  &__question__ans {
+    color: $clr-purple-grayish;
+  }
+}

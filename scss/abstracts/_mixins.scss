@@ -1,0 +1,4 @@
+@mixin change-display($type, $gap: 1rem) {
+  display: $type;
+  gap: $gap;
+}

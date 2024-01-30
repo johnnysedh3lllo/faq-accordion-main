@@ -1,0 +1,22 @@
+.card {
+  @include change-display($display-grid);
+  inline-size: min(100%, 36rem);
+
+  &__title {
+    &--wrapper {
+      @include change-display($display-flex);
+    }
+  }
+  &__body {
+    @include change-display($display-grid, 2.5rem);
+  }
+
+  &__question {
+    @include change-display($display-grid);
+    &__title--wrapper {
+      display: $display-flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

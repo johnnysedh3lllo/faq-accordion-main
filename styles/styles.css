@@ -1,0 +1,137 @@
+/* Box sizing, margin and padding rules*/
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  outline-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+html {
+  scroll-padding-block-start: 5rem;
+}
+
+/* Set core root defaults */
+html,
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-block-size: 100vh;
+  inline-size: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* prevents outline on pseudo classes on anchor links */
+a:focus,
+a:visited,
+a:active {
+  outline-color: transparent;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons and prevent blue highlight box */
+input,
+button,
+textarea,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+  font: inherit;
+  outline: transparent;
+}
+
+body {
+  background: url("../../public/images/background-pattern-mobile.svg") no-repeat hsl(275, 100%, 97%);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.card__title {
+  font-size: 3rem;
+}
+.card__question__ans {
+  transition: opacity 0.35s;
+}
+
+.closed {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  body {
+    background: url("../../public/images/background-pattern-desktop.svg") no-repeat hsl(275, 100%, 97%);
+  }
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.card_title {
+  font-weight: 700;
+}
+.card__title, .card__question__title {
+  color: hsl(292, 42%, 14%);
+}
+.card__question__ans {
+  color: hsl(292, 16%, 49%);
+}
+
+.card {
+  display: grid;
+  gap: 1rem;
+  inline-size: min(100%, 36rem);
+}
+.card__title--wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.card__body {
+  display: grid;
+  gap: 2.5rem;
+}
+.card__question {
+  display: grid;
+  gap: 1rem;
+}
+.card__question__title--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
