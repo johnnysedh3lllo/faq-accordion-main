@@ -40,7 +40,7 @@ body {
 
 @media (min-width: 375px) {
   body {
-    background: url("../public/images/background-pattern-desktop.svg")
+    background: url("/images/background-pattern-desktop.svg")
       no-repeat $clr-light-pink;
   }
 }

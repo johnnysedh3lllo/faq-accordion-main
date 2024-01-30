@@ -107,7 +107,7 @@ body {
 
 @media (min-width: 375px) {
   body {
-    background: url("../public/images/background-pattern-desktop.svg") no-repeat hsl(275, 100%, 97%);
+    background: url("/images/background-pattern-desktop.svg") no-repeat hsl(275, 100%, 97%);
   }
 }
 body {
